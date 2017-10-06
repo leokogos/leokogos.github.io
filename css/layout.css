@@ -1,0 +1,67 @@
+/**********
+/* Header
+**********/
+	.header[role=banner] {
+		background:#fff;
+		padding:0;
+		overflow: hidden;
+	}
+	
+	.header figure img {
+		border-radius: 10px;
+		position: relative;
+		margin:10px;
+		height: 150px;
+	}
+	
+	.header hgroup {
+		float: left;
+		padding: 5px 0;
+	}
+	
+	.header hgroup h2 {
+		color:#555;
+		font-family:'DroidSansBold', Arial, sans-serif;
+		
+	}
+	
+	.header hgroup h3 {
+		color:#cecece;
+		font-style: italic;
+		text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+		
+	}
+	
+	/*Resume*/
+	h6 span {
+    padding-right:10px; 
+    display:block;
+}
+.glyphcolor {
+    color: #144150;
+}
+	.progress {height: 4px;}
+	/*Footer*/
+	
+	.footer {
+  background:#f3f3f3;
+  color: #000000;
+  padding: 10px 20px 10px 20px;
+  border-top: 1px solid #808080 ;
+  border-bottom: 1px dotted #000000;
+  margin-top: 20px;
+  padding:20px;
+ 
+}
+.footer-copyright {
+  text-align: center;
+  color: #000000;
+ 
+  padding-top: 10px;
+  font-size: 0.9em;
+}
+a { 
+	color: #303030; 
+	text-decoration: none;
+	}
+a:hover { border-bottom-style: solid; color: #828282; }
