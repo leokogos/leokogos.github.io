@@ -40,7 +40,19 @@
 .glyphcolor {
     color: #144150;
 }
-	.progress {height: 4px;}
+	.progress {
+		height: 6px;
+	background-color: #B8C2C9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+	.progress {
+  
+}
+	
+
+
 	/*Footer*/
 	
 	.footer {
