@@ -1,36 +1,11 @@
-carousel = (function(){
-  // Read necessary elements from the DOM once
-  var box = document.querySelector('.carouselbox');
-  var next = box.querySelector('.carouselnext');
-  var prev = box.querySelector('.carouselprev');
-  // Define the global counter, the items and the 
-  // current item 
-  var counter = 0;
-  var items = box.querySelectorAll('.carouselcontent li');
-  var amount = items.length;
-  var current = items[0];
-  box.classList.add('carouselactive');
-  // navigate through the carousel
-  function navigate(direction) {
-    // hide the old current list item 
-    current.classList.remove('carouselcurrent');
-    
-    // calculate the new position
-    counter = (counter + direction) % amount;
-    counter = counter < 0 ? amount - 1 : counter;
-    // set new current element 
-    // and add CSS class
-    current = items[counter];
-    current.classList.add('carouselcurrent');
-  }
-  // add event handlers to buttons
-  next.addEventListener('click', function(ev) {
-    navigate(1);
-  });
-  prev.addEventListener('click', function(ev) {
-    navigate(-1);
-  });
-  // show the first element 
-  // (when direction is 0 counter doesn't change)
-  navigate(0);
-})();
+function changeImage(current) {
+	var imagesNumber = 5;
+	
+	for (i=1; i<=imagesNumber; i++) {	
+		if (i == current) {
+			document.getElementById("normal" + current).style.display = "block";
+		} else {
+			document.getElementById("normal" + i).style.display = "none";
+		}
+	}
+}

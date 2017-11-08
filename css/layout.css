@@ -57,7 +57,16 @@ padding:0;
 }
 .project{text-decoration: underline;}
     
-
+/*Projects*/
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width: 150%;
+    height:auto;
+    display:block;
+    z-index:999;
+}
 	/*Footer*/
 	
 	.footer {
