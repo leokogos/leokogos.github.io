@@ -37,7 +37,7 @@
     padding-right:10px; 
     display:block;
 }
-.glyphcolor {
+    .glyphcolor {
     color: #144150;
 }
 	.progress {
@@ -46,12 +46,17 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-
-	.progress {
-  
+.listings{
+border-collapse: collapse;
+border: none;
+text-align: center;
+width: 98%;
+margin-left: auto;
+margin-right: auto;
+padding:0;
 }
-	
-
+.project{text-decoration: underline;}
+    
 
 	/*Footer*/
 	
