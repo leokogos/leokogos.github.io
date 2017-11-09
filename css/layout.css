@@ -22,13 +22,14 @@
 	.header hgroup h2 {
 		color:#555;
 		font-family:'DroidSansBold', Arial, sans-serif;
+        font-size: 5.2rem;
 		
 	}
 	
 	.header hgroup h3 {
-		color:#cecece;
-		font-style: italic;
-		text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+		color:#7B8B8B;
+        font-size: 2.5rem;
+        font-style:bold;
 		
 	}
 	
