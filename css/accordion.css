@@ -37,7 +37,8 @@ label {
 }
 
 .tab-content p {
-  margin: 1em;
+  margin: .5em;
+  text-align: justify;
 }
 /* :checked */
 input:checked ~ .tab-content {
