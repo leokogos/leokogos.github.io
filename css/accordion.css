@@ -1,30 +1,71 @@
 
-.raccordion {
-background: none repeat scroll 0 0 #535353;
-color: #FFFFFF;
-margin: 1px 0;
+.half {
+  float: left;
+  width: 100%;
+  padding: 0 1em;
 }
-.raccordion-title {
-cursor: pointer;
-display: block;
-font-size: 16px;
-font-weight: bold;
-height: 20px;
-padding: 6px 10px;
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
 }
-.raccordion-content {
-background: #f9f9f9;
-color: #404040;
-font-size: 16px;
-padding: 10px;
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
-.raccordion-arrow {
-height: 28px;
-width: 29px;
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 .5em;
+  background: #144150;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
 }
-.arrow-up {
-background: url("images/arrow-down.png") no-repeat scroll 99% 4px / 23px auto rgba(0, 0, 0, 0);
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #5A7A84;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
 }
-.arrow-down {
-background: url("images/arrow-up.png") no-repeat scroll 99% 4px / 23px auto rgba(0, 0, 0, 0);
+
+.tab-content p {
+  margin: 1em;
+}
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 10em;
+}
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+input[type=checkbox] + label::after {
+  content: "+";
+}
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
 }
