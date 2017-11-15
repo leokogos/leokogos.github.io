@@ -42,6 +42,7 @@ label {
 }
 /* :checked */
 input:checked ~ .tab-content {
+  max-height: 25em;
 }
 /* Icon */
 label::after {
