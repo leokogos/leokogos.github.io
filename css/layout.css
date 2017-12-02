@@ -12,6 +12,7 @@
 		position: relative;
 		margin:10px;
 		height: 150px;
+		float:right;
 	}
 	
 	.header hgroup {
