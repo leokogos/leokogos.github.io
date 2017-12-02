@@ -37,6 +37,7 @@
 	h6 span {
     padding-right:10px; 
     display:block;
+    text-decoration: underline;
 }
     .glyphcolor {
     color: #144150;
