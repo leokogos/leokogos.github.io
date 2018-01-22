@@ -145,7 +145,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CACACA', end
 }
 
 .postit ul{
- list-style-image: url('../images/check.png'); 
+ list-style:none;
+ margin:0; padding:0;
  list-style-position: inside; 
+}
+
+.postit ul li{
+  margin:5px; padding:0;
+  background:url('../images/check.png') no-repeat 0 0;
+  padding-left:30px;  // according to your image with
 }
 
