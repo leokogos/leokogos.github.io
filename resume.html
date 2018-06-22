@@ -15,48 +15,35 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/accordion.css">
+  <link rel="stylesheet" href="css/custom.css">
 
-  
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/ico" href="images/favicon.ico">
 
 </head>
-<body>
+<body >
+<div class=" wrap">
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="container">
-	<div class="row header">
-		<div class="eight columns">
-				<hgroup>
-					<h2>Leonard Kogos</h2>
-					<h3>Electrical Engineer + Avid tinkerer</h3>
-				</hgroup>
-		</div>
-		<div class="four columns">
-				<figure >
-					<img src="images/pic.jpg" alt="Pic">
-				</figure>
-		</div>
-	</div>
-	<div class="row">
-		<div class="twelve columns">
-			<!-- Standard buttons -->
-			<a class="button" href="index.html">Landing Page</a>
-			<a class="button" href="resume.html">Curriculum Vitae</a>
-			<a class="button" href="projects.html">Additional Projects</a>
-		</div>
-	<div>
-	<div class="row">
+  <div class="container spacer">
+        <div class="row">
+			<div class="twelve columns header landing">
+		  		<a href="index.html">Home</a>
+		  		<a href="about.html">About</a>
+          		<a href="resume.html">Curriculum Vitae</a>
+          		<a href="projects.html">Projects</a>
+       		</div> 
+	  	</div>
+    	<div class="row">
 		<div class="twelve columns">
 			<h4>Curriculum Vitae</h4>
 			<br/>
@@ -64,7 +51,7 @@
 	</div>
     <div class="row">
 		<div class="six columns">
-				<h6><span class="glyphicon glyphicon-education glyphcolor" aria-hidden="true"></span>Education</h6>
+				<h6 class='resumeitem'><span class="glyphicon glyphicon-education glyphcolor" aria-hidden="true"></span>Education</h6>
 				<p>
 					<strong>Boston University - Boston, MA - (2013 - PRESENT)</strong><br />
 					<strong>MS:</strong> Electrical Engineering  - 2016<br />
@@ -77,7 +64,7 @@
 				</p>
 		</div>
 		<div class="six columns"> 
-			<h6>
+			<h6 class='resumeitem'>
 				<span class="glyphicon glyphicon-tasks glyphcolor" aria-hidden="true"></span>Competencies
 			</h6>
 			<div class="wrapper">
@@ -118,7 +105,7 @@
 	</div>
 	<div class="row">
 		<div class="twelve columns">
-		<h6><span class="glyphicon glyphicon-wrench glyphcolor" aria-hidden="true"></span>Specialized Skills</h6>
+		<h6 class='resumeitem'><span class="glyphicon glyphicon-wrench glyphcolor" aria-hidden="true"></span>Specialized Skills</h6>
 		<p>
 			<strong>Research:</strong> Nanofabrication, optical FDTD simulation, SEM imaging, FIB milling, PCB design, Theoretical and experimental characterization of optical devices<br />
 			<strong>Programming:</strong> HTML, CSS, JavaScript, Python, LabVIEW, MATLAB, Java, Lumerical, C <br />
@@ -128,7 +115,7 @@
 	</div> 	
 	<div class="row">
 		<div class="twelve columns">
-			<h6><span class="glyphicon glyphicon-briefcase glyphcolor" aria-hidden="true"></span>Technical Experience</h6>
+			<h6 class='resumeitem'><span class="glyphicon glyphicon-briefcase glyphcolor" aria-hidden="true"></span>Technical Experience</h6>
 			<p>
                 <strong>
                     PAIELLA GROUP - (Boston, MA) - Research Assistant (Sept 2013 – PRESENT)
@@ -246,7 +233,7 @@
 	</div>
     <div class="row">
 		<div class="twelve columns">
-			<h6><span class="glyphicon glyphicon-list-alt glyphcolor" aria-hidden="true"></span>Patents</h6>
+			<h6 class='resumeitem'><span class="glyphicon glyphicon-list-alt glyphcolor" aria-hidden="true"></span>Patents</h6>
 			<p>
 			<ul>
 				<li>
@@ -257,7 +244,7 @@
 	</div>
 	<div class="row">
 		<div class="twelve columns">
-			<h6><span class="glyphicon	glyphicon glyphicon-globe glyphcolor" aria-hidden="true"></span>Leadership </h6>
+			<h6 class='resumeitem'><span class="glyphicon	glyphicon glyphicon-globe glyphcolor" aria-hidden="true"></span>Leadership </h6>
             <strong>
                 Mentoring
             </strong>
@@ -284,7 +271,7 @@
 	</div>
 	<div class="row">
 		<div class="twelve columns">
-			<h6><span class="glyphicon glyphicon-gift glyphcolor" aria-hidden="true"></span>Awards/Grants</h6>
+			<h6 class='resumeitem'><span class="glyphicon glyphicon-gift glyphcolor" aria-hidden="true"></span>Awards/Grants</h6>
 			<p>
 			<ul>
 				<li>
@@ -298,7 +285,7 @@
 	</div>
     <div class="row">
 		<div class="twelve columns">
-		<h6><span class="glyphicon glyphicon-folder-open glyphcolor" aria-hidden="true"></span>Conferences/Publications</h6>
+		<h6 class='resumeitem'><span class="glyphicon glyphicon-folder-open glyphcolor" aria-hidden="true"></span>Conferences/Publications</h6>
 			<p>
 				<ul>
                     <li>
@@ -337,21 +324,18 @@
 			References Available on Request.
 	    </div>
 	</div>
-	<div class="row">
-		<div class="twelve columns">
-			<div class="footer">
-		    		<p class="contact-us-details">
-	        			<b>Address:</b> BU Photonics Center 8 St. Mary's St. Boston MA. 02215<br/>
-						<b>Email:</b> <a href="mailto:kogos@bu.edu?Subject=Contact%20through%20website">kogos@bu.edu</a><br/>
-                        <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/kogos">https://www.linkedin.com/in/kogos</a><br/>
-	        			<b>Research group:</b> <a class="lab-link" href="https://www.bu.edu/paiella/people.html">https://www.bu.edu/paiella/people.html</a>
+    </div>
+  </div>
+  <div class="row footer">
+		    		<p class="footer-copyright">
+	        			 BU Photonics Center 8 st Mary's St. Boston MA. 02215<br/>
+                        <a href="https://www.linkedin.com/in/kogos">https://www.linkedin.com/in/kogos</a><br/>
+	        			</b> <a class="lab-link" href="https://www.bu.edu/paiella/people.html">https://www.bu.edu/paiella/people.html</a>
 	        		</p>
 					<div class="footer-copyright">&copy; 2018 leonardkogos. All rights reserved.</div>
 			</div>
-	    </div>
-	</div>
-</div>
-
+ 
+ </div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
