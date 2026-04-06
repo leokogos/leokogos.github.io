@@ -1,25 +1,58 @@
-<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>LeonardKogos</title>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <meta content="utf-8" http-equiv="encoding" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&family=Montserrat:ital,wght@0,300;0,400;0,800;1,400&family=Yeseva+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="description" content="Leonard Kogos - PhD Electrical Engineer specializing in Photonics and Integrated Optics" />
+    <meta name="theme-color" content="#050816" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <title>Leonard Kogos | Photonics Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      /* Critical CSS for fast initial paint */
+      body {
+        margin: 0;
+        background-color: #050816;
+        color: #ffffff;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      #root {
+        min-height: 100vh;
+      }
+      /* Initial loading state */
+      .initial-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #050816;
+        z-index: 9999;
+      }
+      .initial-loader::after {
+        content: '';
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgba(0, 255, 255, 0.3);
+        border-top-color: #00ffff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+    <script type="module" crossorigin src="/bundle.js"></script>
+    <link rel="stylesheet" crossorigin href="/bundle.css">
   </head>
   <body>
-    <div id="root"></div>
-    <script src="bundle.js"></script>
+    <div id="root">
+      <div class="initial-loader"></div>
+    </div>
   </body>
 </html>
